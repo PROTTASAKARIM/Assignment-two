@@ -1,6 +1,8 @@
 body
 {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     
 }
 .heading{
@@ -81,7 +83,8 @@ body
      width: 16px;
  }
  .see-more{
-    
+    margin-left: 930px;
+    margin-top: 20px;
  }
  .link-button2{
     text-decoration: none;
@@ -90,4 +93,23 @@ body
 }
  .fa-arrow-right.color{
     color: #E02C6D;
+}
+/* footer style */
+footer{
+    background-color: rgb(2, 2, 34);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+footer h3{
+    font-size: 24px;
+}
+.fa-instagram{
+    padding: 10px;
+}
+.fa-basketball-ball{
+    padding: 10px;
+}
+.fa-twitter-square{
+    padding: 10px;
 }
