@@ -20,12 +20,21 @@ body
     font-weight: 900;
     font-size: 2.5em;
 }
-.link-button{
-    text-decoration: none;
-    padding: 10px;
-    color: white;
+.prebook-btn{
+    padding: 10px 10px 10px 30px;
     background-color: #E02C6D;
     border-radius: 30px;
+    margin-right: 400px;
+}
+.link-button{
+    text-decoration: none;
+    /* padding: 10px; */
+    color: white;
+    /* background-color: #E02C6D; */
+    /* border-radius: 30px; */
+}
+.fa-arrow-right{
+    color: white;
 }
 .influencer-image{
     margin-left: 100px;
