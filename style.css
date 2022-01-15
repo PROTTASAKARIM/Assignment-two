@@ -3,10 +3,11 @@ body
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     
 }
 .heading{
-    margin-left: 120px;
+    margin-left: 20px;
 }
 /*-----------------
  first section css
@@ -19,7 +20,7 @@ body
 .influencer-detail{
     Width :582px;
     Height: 270px;
-    margin-left: 120px;
+    margin-left: 20px;
     /* margin-top: 100px; */
 
 }
@@ -28,10 +29,11 @@ body
     font-size: 2.5em;
 }
 .prebook-btn{
-    padding: 10px 10px 10px 30px;
+    display: inline;
+    padding: 10px 10px 10px 10px;
     background-color: #E02C6D;
     border-radius: 30px;
-    margin-right: 400px;
+    /* margin-right: 400px; */
 }
 .link-button{
     text-decoration: none;
@@ -42,11 +44,12 @@ body
     color: white;
 }
 .influencer-image{
-    margin-left: 100px;
-    transition: transform 1.5s;
+    /* margin-left: 100px; */
+    align-items: center;
+    transition: transform 1.5s ease;
 }
 .influencer-image:hover{
-    transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(-30deg);
     /* transition-timing-function: ease-in; */
 }
 
@@ -54,8 +57,9 @@ body
  first section css
  ---------------- */
 .grid-container{
-    width: 1027px;
-    margin-left: 96px;
+    /* width: 1027px; */
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
  .popular-collection{
@@ -100,6 +104,35 @@ body
  .fa-arrow-right.color{
     color: #E02C6D;
 }
+/* extra section */
+.readmore-section h2{
+    text-align: center;
+}
+
+
+.readmore-containers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.readmore{
+    width: 250px;
+    height: 550px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 5px 10px 8px 10px #c2c0c02d;
+    transition: transform 1s;
+}
+.readmore:hover{
+transform: scale(1.1);
+}
+.readmore img{
+    width: 250px;
+}
+.readmore-newpage{
+margin-left: 110px;
+}
+
 /* footer style */
 footer{
     background-color: rgb(2, 2, 34);
@@ -119,3 +152,72 @@ footer h3{
 .fa-twitter-square{
     padding: 10px;
 }
+
+/* media query for mobile phone */
+@media only screen and (max-width:680px){
+    .heading{
+        margin-left: 100px;
+    }
+ 
+    .become-influencer{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+.container{
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column-reverse;
+}
+.container h1,p{
+    text-align: center;
+}
+.container img{
+    align-content: center;
+    width: 90%;
+    margin-left: 20px;
+}
+.prebook-btn{
+    display: inline;
+    padding: 10px;
+    background-color: #E02C6D;
+    border-radius: 30px;
+     margin-left: 100px;
+}
+.influencer-detail{
+    width: 90%;
+}
+.grid-container{
+    margin-top: 250px;
+}
+.grid-container h3{
+    text-align: left;
+    margin-left: 100px;
+
+}
+.collection-items {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.collection-item{
+    margin-left:0px ;
+}
+.readmore-containers {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    .collection-items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .readmore-containers {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
