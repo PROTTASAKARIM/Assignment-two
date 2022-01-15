@@ -110,6 +110,9 @@ body
     color: #E02C6D;
 }
 /* extra section */
+.readmore-section{
+margin-top: 100px;
+}
 .readmore-section h2{
     text-align: center;
 }
