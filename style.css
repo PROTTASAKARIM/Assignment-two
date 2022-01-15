@@ -155,8 +155,11 @@ footer h3{
 
 /* media query for mobile phone */
 @media only screen and (max-width:680px){
+    body {
+        overflow-x: hidden !important;
+    }
     .heading{
-        margin-left: 100px;
+        margin-left: 120px;
     }
  
     .become-influencer{
@@ -201,6 +204,9 @@ footer h3{
 }
 .collection-item{
     margin-left:0px ;
+}
+.stars-five{
+    margin-left: 100px;
 }
 .readmore-containers {
     display: grid;
